@@ -18,6 +18,9 @@ s.homepage = "https://github.com/Jaumo/StarRating"
 
 s.source = { :git => "https://github.com/Jaumo/StarRating.git", :tag => "#{s.version}"}
 
-s.source_files = "StarRating/StarRating/StarRatingControl.*", "StarRating/StarRating/*.png" 
+s.source_files = "StarRating/StarRating/StarRatingControl.*"
 
+s.resource_bundles = {
+    "images" => ["StarRating/StarRating/*.png"]
+}
 end
