@@ -14,8 +14,8 @@
 - (id)initWithFrame:(CGRect)frame;
 - (id)initWithFrame:(CGRect)frame andStars:(NSUInteger)_numberOfStars;
 
-@property (strong) UIImage *star;
-@property (strong) UIImage *highlightedStar;
+@property (nonatomic, strong) UIImage *star;
+@property (nonatomic, strong) UIImage *highlightedStar;
 @property (assign) NSUInteger rating;
 @property (weak) IBOutlet NSObject<StarRatingDelegate> *delegate;
 

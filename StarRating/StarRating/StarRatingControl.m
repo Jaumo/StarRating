@@ -50,15 +50,15 @@
 
 - (void)setHighlightedStar:(UIImage *)highlightedStar {
     _highlightedStar = highlightedStar;
-    [_stars enumerateObjectsUsingBlock:^(UIImageView *star, NSUInteger idx, BOOL *stop) {
-        star.highlightedImage = highlightedStar;
+    [_stars enumerateObjectsUsingBlock:^(UIImageView *starImageView, NSUInteger idx, BOOL *stop) {
+        starImageView.highlightedImage = highlightedStar;
     }];
 }
 
 - (void)setStar:(UIImage *)star {
     _star = star;
-    [_stars enumerateObjectsUsingBlock:^(UIImageView *star, NSUInteger idx, BOOL *stop) {
-        star.image = star;
+    [_stars enumerateObjectsUsingBlock:^(UIImageView *starImageView, NSUInteger idx, BOOL *stop) {
+        starImageView.image = star;
     }];
 }
 
