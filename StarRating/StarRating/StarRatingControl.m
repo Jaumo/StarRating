@@ -36,7 +36,7 @@
 
 - (void)setupView {
     self.clipsToBounds = YES;
-    _currentIdx = -1;
+    _currentIdx = 0;
     _star = [UIImage imageNamed:@"rate_star.png"];
     _highlightedStar = [UIImage imageNamed:@"rate_star_highlighted.png"];
     NSMutableArray *s = [NSMutableArray arrayWithCapacity:_numberOfStars];
